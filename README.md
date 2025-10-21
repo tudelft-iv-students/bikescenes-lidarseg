@@ -9,7 +9,7 @@ The BikeScenes-lidarseg dataset provides semantically annotated 3D LiDAR data fr
 
 * **[link to paper]**
 
-Authors: Denniz Goren, Holger Caesar. 
+Authors: Denniz Goren, Holger Caesar 
 
 ## The SenseBike
 
@@ -36,36 +36,24 @@ Authors: Denniz Goren, Holger Caesar.
   <tr>
     <td>
       <p>
-        The BikeScenes-lidarseg dataset is provided in two main directories: <code>entire_sequence</code> and <code>subsequences</code>.
+         Each LiDAR scan <code>.bin</code> file in <code>robosense_m1p/</code> has matching labels and images in <code>labels/</code> and <code>images/</code>, along with calibration and pose metadata used for multi-scan labeling.
       </p>
       <p>
-        The <code>entire_sequence</code> directory contains the full, uninterrupted recording, along with associated images and poses for each scan. In <code>subsequences</code>, we provide the same core data, but split into sequential segments (e.g., <code>00</code>, <code>01</code>, etc.) to reproduce the training and evaluation splits described in our paper. The folder structure is as follows:
+        The training and evaluation splits used in our paper are provided via <code>subsequences.json</code>, which maps contiguous frame ranges (e.g., <code>00</code>, <code>01</code>, etc.) onto the full trajectory. The folder structure is as follows:
       </p>
-      <pre><code>bikescenes_lidarseg/
-├── entire_sequence/
-│   ├── robosense_m1p/
-│   │   ├── 1739357499107089281.bin
-│   │   └── ...
-│   ├── labels/
-│   │   ├── 1739357499107089281.label
-│   │   └── ...
-│   ├── images/
-│   │   ├── 1739357499107089281.png
-│   │   └── ...
-│   ├── calib.txt
-│   └── poses.txt
-│
-├── subsequences/
-│   ├── 00/
-│   │   ├── robosense_m1p/
-│   │   │   └── 000000.bin
-│   │   └── labels/
-│   │       └── 000000.label
-│   ├── 01/
-│   │   └── ...
-│   ├── ...
-│   └── 08/
-│       └── ...
+<pre><code>bikescenes_lidarseg/
+   ├── robosense_m1p/
+   │   ├── 000000.bin
+   │   └── ...
+   ├── labels/
+   │   ├── 000000.label
+   │   └── ...
+   ├── images/
+   │   ├── 000000.png
+   │   └── ...
+   ├── calib.txt
+   ├── poses.txt
+   └── subsequences.json 
 </code></pre>
     </td>
     <td align="right" valign="top">
@@ -79,11 +67,10 @@ Authors: Denniz Goren, Holger Caesar.
 
 ## Labeling Scheme
 
-We utilize the 28 semantic classes from the SemanticKITTI dataset, with the addition of a distinct `bike-path` class. The labeling was performed manually using the SemanticKITTI labeling tool. 
+We utilize the 28 semantic classes from the SemanticKITTI dataset, with the addition of a distinct `bike-path` class. The labeling was performed manually using the [SemanticKITTI labeling tool](https://github.com/jbehley/point_labeler). 
 
 
 [![Class Distribution Figure](assets/class_distribution.png)](assets/class_distribution.png)
-
 
 
 ## Acknowledgements
@@ -95,3 +82,5 @@ We gratefully acknowledge the following projects and contributors, whose work an
 - [FRNet](https://github.com/Xiangxu-0103/FRNet)
 - [GLIM](https://github.com/koide3/GLIM) 
 - [Boreal Bikes](https://www.borealbikes.com)
+
+## Citation
