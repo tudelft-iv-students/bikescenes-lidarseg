@@ -1,3 +1,8 @@
 .DS_Store
-data/
-BikeScenes_ICRA_paper.pdf
+bikescenes_lidarseg/
+BikeScenes_paper.pdf
+bikescenes_lidarseg.zip
+__pycache__/
+*.pyc   
+list_classes.py
+visualize.py

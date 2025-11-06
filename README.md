@@ -7,7 +7,7 @@
 
 The BikeScenes-lidarseg dataset provides semantically annotated 3D LiDAR data from a bicycle's perspective, collected around the TU Delft campus. It is created to facilitate research into cyclist-centric perception. For detailed information on data collection, processing, and baseline model performance, please refer to our accompanying paper:
 
-* **[link to paper]**
+* [BikeScenes: Online LiDAR Semantic Segmentation for Bicycles](https://arxiv.org/abs/2510.25901)
 
 Authors: Denniz Goren, Holger Caesar 
 
@@ -52,6 +52,7 @@ Authors: Denniz Goren, Holger Caesar
    │   ├── 000000.png
    │   └── ...
    ├── calib.txt
+   ├── classes.yaml
    ├── poses.txt
    └── subsequences.json 
 </code></pre>
@@ -72,6 +73,9 @@ We utilize the 28 semantic classes from the SemanticKITTI dataset, with the addi
 
 [![Class Distribution Figure](assets/class_distribution.png)](assets/class_distribution.png)
 
+## Downloading the Dataset
+The dataset can be downloaded as a single .zip file from the following link:
+- [Download BikeScenes-lidarseg Dataset](https://zenodo.org/records/17508644)
 
 ## Acknowledgements
 We gratefully acknowledge the following projects and contributors, whose work and support were instrumental in the development of our dataset and paper:
@@ -84,3 +88,15 @@ We gratefully acknowledge the following projects and contributors, whose work an
 - [Boreal Bikes](https://www.borealbikes.com)
 
 ## Citation
+If you use this work in your research, please cite:
+
+```bibtex
+@misc{goren2025bikescenesonlinelidarsemantic,
+      title={BikeScenes: Online LiDAR Semantic Segmentation for Bicycles}, 
+      author={Denniz Goren and Holger Caesar},
+      year={2025},
+      eprint={2510.25901},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.25901}, 
+}
