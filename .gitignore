@@ -5,4 +5,5 @@ bikescenes_lidarseg.zip
 __pycache__/
 *.pyc   
 list_classes.py
-visualize.py
+video/
+assets/bikescenes.mp4

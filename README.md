@@ -49,6 +49,13 @@ We utilize the 28 semantic classes from the SemanticKITTI dataset, with the addi
 The dataset can be downloaded as a single .zip file from the following link:
 - [Download the BikeScenes-lidarseg dataset](https://zenodo.org/records/17508644)
 
+## Visualizing the Dataset
+Install the Python dependencies and run the visualizer script by pointing it at the dataset root (path that contains `robosense_m1p/`, `labels/`, and `images/`):
+```bash
+pip install -r requirements.txt
+python visualize.py <dataset_root>
+```
+
 ## Acknowledgements
 We gratefully acknowledge the following projects and contributors, whose work and support were instrumental in the development of our dataset and paper:
 
