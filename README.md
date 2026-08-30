@@ -1,13 +1,15 @@
 # <img src="assets/logo_small.png" height="46px" style="vertical-align: middle" /> BikeScenes-lidarseg dataset
 [![arXiv](https://img.shields.io/badge/arXiv-10.48550%2FarXiv.2510.25901-b31b1b.svg)](https://doi.org/10.48550/arXiv.2510.25901)
 [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.17508644-1f70c1.svg)](https://doi.org/10.5281/zenodo.17508644)
-[![BikeScenes Dataset](assets/bikescenes_map.png)](assets/bikescenes_map.png)
+[![BikeScenes Dataset](assets/bikescenes_map.png)](https://app.rerun.io/version/0.28.2/index.html?url=https%3A%2F%2Fraw.githubusercontent.com%2Ftudelft-iv-students%2Fbikescenes-lidarseg%2Fmain%2Fassets%2Fbikescenes_demo.rrd)
+
+**[Open the interactive BikeScenes visualization in Rerun](https://app.rerun.io/version/0.28.2/index.html?url=https%3A%2F%2Fraw.githubusercontent.com%2Ftudelft-iv-students%2Fbikescenes-lidarseg%2Fmain%2Fassets%2Fbikescenes_demo.rrd)**
 
 ## Overview
 
-The BikeScenes-lidarseg dataset provides semantically annotated 3D LiDAR data from a bicycle's perspective, collected around the TU Delft campus. It is created to facilitate research into cyclist-centric perception. For detailed information on data collection, processing, and baseline model performance, please refer to our accompanying paper:
+The BikeScenes-lidarseg dataset provides semantically annotated 3D LiDAR data from a bicycle's perspective, collected around the TU Delft campus. It is created to facilitate research into cyclist-centric perception. The accompanying paper was accepted to the DriveX Workshop at ECCV 2026:
 
-* [BikeScenes: Online LiDAR Semantic Segmentation for Bicycles](https://arxiv.org/abs/2510.25901)
+* [BikeScenes: LiDAR Semantic Segmentation for Bicycles](https://arxiv.org/abs/2510.25901)
 
 Authors: Denniz Goren, Holger Caesar 
 
@@ -67,15 +69,17 @@ We gratefully acknowledge the following projects and contributors, whose work an
 - [Boreal Bikes](https://www.borealbikes.com)
 
 ## Citation
-If you use this work in your research, please cite:
+If you use the BikeScenes dataset or accompanying tools in your research, please cite the paper below:
 
 ```bibtex
-@misc{goren2025bikescenesonlinelidarsemantic,
-      title={BikeScenes: Online LiDAR Semantic Segmentation for Bicycles}, 
+@misc{goren2025bikesceneslidarsemantic,
+      title={BikeScenes: LiDAR Semantic Segmentation for Bicycles},
       author={Denniz Goren and Holger Caesar},
       year={2025},
       eprint={2510.25901},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2510.25901}, 
+      note={Accepted at the DriveX Workshop, ECCV 2026},
+      url={https://arxiv.org/abs/2510.25901},
 }
+```
